@@ -49,17 +49,21 @@ html, body {
 		MEDIA QUERIES
 ****************************************/
 
+@media (max-width: 1920px){
+	img {
+	width: 100%;
+    }
+}
+
 
 @media (max-width: 1480px){
-	#screenImg, img {
-	width: 95%;
-    height: 145px;
-    margin: 0 2.5%;
+	img {
+	width: 100%;
 	}
 }
 
 @media (max-width: 1260px){
-	#screenImg, img{
+	img{
     width: 90%;
     margin:0 5%;
 	}
@@ -67,14 +71,14 @@ html, body {
 
 
 @media (max-width: 900px){
-	#screenImg, img{
+	img{
 	margin: 0;
     width: 100%;
 	}
 }
 
 @media (max-width: 800px){
-	#screenImg, img{
+	img{
 	margin: 0;
     width: 100%;
 	}
@@ -89,7 +93,7 @@ html, body {
 
 
 @media (max-width: 670px){
-	#screenImg{
+	img{
     width: 100%;
     margin:0;
     
@@ -97,7 +101,7 @@ html, body {
 }
 
 @media (max-width: 495px){
-	#screenImg{
+	img{
     width: 100%;
     margin:0;
     
