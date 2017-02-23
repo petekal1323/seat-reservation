@@ -41,6 +41,26 @@ html, body {
     width: 45px;
 }
 
+.selectable li {
+    margin: .5%;
+    display: inline-block;
+    width: 16%;
+    height: 100px;
+    padding: 2px;
+    font-size: 1em;
+    text-align: center;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.seatRow {
+width: 80%;
+margin: auto;
+
+}
+
 
 
 
