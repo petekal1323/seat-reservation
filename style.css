@@ -68,6 +68,23 @@ margin: 0 auto;
 
 
 
+/************************************
+		Form
+*************************************/
+
+
+#form{
+	text-align: center;
+	display: none;
+	font-size: 28px
+}
+#form input{
+	font-size: 28px;
+}
+
+
+
+
 
 /***************************************
 		MEDIA QUERIES
@@ -138,19 +155,6 @@ margin: 0 auto;
 	}
 }
 
-
-/*@media (max-width: 670px){
-	img{
-    width: 100%;
-    margin:0;
-    
-	}
-
-	.selectable{
-	margin: 19px 0%;
-    width: 90%;
-	}
-}*/
 
 @media (max-width: 670px){
 	img{
