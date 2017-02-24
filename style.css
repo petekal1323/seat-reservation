@@ -3,10 +3,6 @@ html, body {
   padding: 0;
 }
 
-.container{
-	width: 100%;
-}
-
 .header{
 	position: relative;
   	margin: 0 auto 0;
@@ -30,8 +26,7 @@ html, body {
     width: 90%;
 }
 
-
-
+/*
 
 .seatBox {
 	display: block;
@@ -64,8 +59,64 @@ width: 90%;
 margin: 0 auto;
 
 }
+*/
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.column {
+  flex-basis: 100%;
+  background-color: grey;
+  margin: 5px;
+  padding: 14px;
+  border: 2px solid yellow;
+  height: 10%;
+}
+
+.column:hover {
+  opacity: .7;
+  background-color: green;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flexbox {
+  width: 80%;
+  margin: 0 auto;
+}
 
 
+.hover {
+  background-color: green;
+}
+
+#form {
+  text-align: center;
+  display: none;
+  font-size: 28px;
+}
+
+#form input {
+  font-size: 28px;
+}
+.reserved {
+  background-color: red;
+}
+
+.reserved:hover {
+  background-color: red;
+
+}
 
 
 
@@ -77,11 +128,13 @@ margin: 0 auto;
 	img {
 	width: 100%;
     }
+  }
+    /*
     .seatSection {
     width: 80%;
     margin: 0px 8%;
 }
-}
+*/
 
 
 @media (max-width: 1480px){
@@ -95,9 +148,12 @@ margin: 0 auto;
     width: 90%;
     margin:0 5%;
 	}
+  .row {
+    height: 100px;
+  }
 }
 
-
+/*
 @media (max-width: 1060px){
 	.selectable li{
     	height: 80px;
@@ -109,7 +165,7 @@ margin: 0 auto;
 
 
 
-
+*/
 @media (max-width: 900px){
 	img{
 	margin: 0;
@@ -122,6 +178,11 @@ margin: 0 auto;
 	margin: 0;
     width: 100%;
 	}
+  span {
+    display: none;
+  }
+}
+  /*
 	.seatSection {
     width: 90%;
     margin: 0px 2%
@@ -130,34 +191,40 @@ margin: 0 auto;
     width: 90%;
     margin: 0 5%;
     }
-
+*/
 @media (max-width: 770px){
 	img{
 	margin: 0;
     width: 100%;
 	}
+  .row {
+    height: 55px;
+  }
 }
 
-
-/*@media (max-width: 670px){
-	img{
-    width: 100%;
-    margin:0;
-    
-	}
-
-	.selectable{
-	margin: 19px 0%;
-    width: 90%;
-	}
-}*/
 
 @media (max-width: 670px){
 	img{
     width: 100%;
     margin:0;
-    
+
 	}
+}
+/*
+	.selectable{
+	margin: 19px 0%;
+    width: 90%;
+	}
+}*/
+/New Comment Out
+@media (max-width: 670px){
+	img{
+    width: 100%;
+    margin:0;
+
+	}
+}
+  /*
 	.selectable {
     margin: 8px 1%;
     width: 90%;
@@ -167,7 +234,8 @@ margin: 0 auto;
 	.selectable li{
     height: 65px;
 	}
-
+*/
+/*
 @media (max-width: 600px){
 	.seatRow {
     width: 90%;
@@ -191,12 +259,14 @@ margin: 0 auto;
     }
 }
 
-
+*/
 @media (max-width: 490px){
 	#screenImg, img{
     width: 100%;
     margin:0;
     }
+  }
+    /*
 	.selectable li {
     height: 60px;
     width: 20%;
@@ -215,4 +285,4 @@ margin: 0 auto;
     margin: 0 0%;
 }
 }
-
+*/
