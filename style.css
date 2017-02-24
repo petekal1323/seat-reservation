@@ -55,13 +55,9 @@ html, body {
     box-sizing: border-box;
 }
 
-.selectable {
-text-align: center;
-}
-
 .seatRow {
-width: 90%;
-margin: 0 auto;
+width: 80%;
+margin: auto;
 
 }
 
@@ -94,10 +90,6 @@ margin: 0 auto;
 	img {
 	width: 100%;
     }
-    .seatSection {
-    width: 80%;
-    margin: 0px 8%;
-}
 }
 
 
@@ -115,18 +107,6 @@ margin: 0 auto;
 }
 
 
-@media (max-width: 1060px){
-	.selectable li{
-    	height: 80px;
-	}
-	.seatRow{
-	width: 90%;
-    margin: 0 5%;
-}
-
-
-
-
 @media (max-width: 900px){
 	img{
 	margin: 0;
@@ -134,19 +114,12 @@ margin: 0 auto;
 	}
 }
 
-@media (max-width: 880px){
+@media (max-width: 800px){
 	img{
 	margin: 0;
     width: 100%;
 	}
-	.seatSection {
-    width: 90%;
-    margin: 0px 2%
 }
-	.seatRow {
-    width: 90%;
-    margin: 0 5%;
-    }
 
 @media (max-width: 770px){
 	img{
@@ -157,65 +130,40 @@ margin: 0 auto;
 
 
 @media (max-width: 670px){
+<<<<<<< HEAD
+=======
+	img{
+    width: 100%;
+    margin:0;
+    
+	}
+}
+
+@media (max-width: 495px){
+>>>>>>> parent of 13c9f38... add all media queries
 	img{
     width: 100%;
     margin:0;
 
 	}
-	.selectable {
-    margin: 8px 1%;
-    width: 90%;
-    height: 74px;
-}
-
-	.selectable li{
-    height: 65px;
-	}
-
-@media (max-width: 600px){
-	.seatRow {
-    width: 90%;
-    margin: 0 4%;
-    }
 }
 
 
-
-@media (max-width: 580px){
-.seatRow {
-    width: 90%;
-    margin: 0 4%;
-    }
-}
-
-@media (max-width: 570px){
-	.seatRow {
-    width: 95%;
-    margin: 0 1%;
-    }
-}
-
-
-@media (max-width: 490px){
+@media (max-width: 455px){
 	#screenImg, img{
     width: 100%;
     margin:0;
-    }
-	.selectable li {
-    height: 60px;
-    width: 20%;
-    margin: 0px 4px;
-	}
-.seatRow {
-    width: 100%;
-    margin: 0 -3%;
+    
 	}
 }
 
 
+<<<<<<< HEAD
 @media (max-width: 400px){
 .seatRow {
     width: 90%;
     margin: 0 0%;
 }
 }
+=======
+>>>>>>> parent of 13c9f38... add all media queries
