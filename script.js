@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$(".seat").on("click", function(){
-		$("#form").show(); //This function makes our 
+		$("#form").show(); //This function makes our
 							//form showup. hashtag blessed
 	});
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 	$(".available").mouseleave (function(){
 		$(this).find("span:last").remove();
+ /* New Comment*/
 
-	
 });
 	});
