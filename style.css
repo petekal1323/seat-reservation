@@ -1,10 +1,10 @@
 html, body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-	width: 100%;
+.container {
+    width: 100%;
 }
 
 .header{
@@ -25,66 +25,63 @@ html, body {
 
 }
 
-#screenImg{
-	margin: auto;
-    width: 90%;
-}
-
-
-
-
-.seatBox {
-	display: block;
-    background-color: lightblue;
-    border: 1px solid #bbb;
-    height: 45px;
-    width: 45px;
-}
-
-.selectable li {
-    margin: .5%;
-    display: inline-block;
-    width: 16%;
-    height: 100px;
-    padding: 2px;
-    font-size: 1em;
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-left: 15px;
     text-align: center;
-    list-style: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
-.seatRow {
-width: 80%;
-margin: auto;
-
+.column {
+    flex-basis: 100%;
+    background-color: grey;
+    margin: 5px;
+    padding: 14px;
+    border: 2px solid yellow;
+    height: 10%;
 }
 
-
-
-
-/************************************
-		Form
-*************************************/
-
-
-#form{
-	text-align: center;
-	display: none;
-	font-size: 28px
-}
-#form input{
-	font-size: 28px;
+.column:hover {
+    opacity: .7;
+    background-color: green;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
-/* Test Comment */
+.flexbox {
+    width: 80%;
+    margin: 0 auto;
+}
 
+.hover {
+    background-color: green;
+}
 
-/***************************************
-		MEDIA QUERIES
-****************************************/
+#form {
+    text-align: center;
+    display: none;
+    font-size: 28px;
+}
+
+#form input {
+    font-size: 28px;
+}
+
+.reserved {
+    background-color: red;
+}
+
+.reserved:hover {
+    background-color: red;
+}
+
+/*Below is Media Queries */
 
 @media (max-width: 1920px){
 	img {
@@ -93,10 +90,15 @@ margin: auto;
 }
 
 
-@media (max-width: 1480px){
-	img {
-	width: 100%;
-	}
+@media (max-width: 1480px) {
+    @@ -95, 9+148, 12 @@ margin: 0 auto;
+    width: 90%;
+    margin: 0 5%;
+}
+.row {
+    height: 100px;
+}
+
 }
 
 @media (max-width: 1260px){
@@ -107,11 +109,16 @@ margin: auto;
 }
 
 
-@media (max-width: 900px){
-	img{
-	margin: 0;
-    width: 100%;
-	}
+@media (max-width: 900px) {
+    img {
+        margin: 0;
+        @@ -122, 6+178, 11 @@ margin: 0 auto;
+        margin: 0;
+        width: 100%;
+    }
+    span {
+        display: none;
+    }
 }
 
 @media (max-width: 800px){
@@ -122,25 +129,27 @@ margin: auto;
 }
 
 @media (max-width: 770px){
-	img{
-	margin: 0;
+img {
+    margin: 0;
     width: 100%;
-	}
+}
+.row {
+    height: 55px;
+}
 }
 
 
 @media (max-width: 670px){
-<<<<<<< HEAD
-=======
+
 	img{
     width: 100%;
     margin:0;
-    
+
 	}
 }
 
 @media (max-width: 495px){
->>>>>>> parent of 13c9f38... add all media queries
+
 	img{
     width: 100%;
     margin:0;
@@ -149,21 +158,3 @@ margin: auto;
 }
 
 
-@media (max-width: 455px){
-	#screenImg, img{
-    width: 100%;
-    margin:0;
-    
-	}
-}
-
-
-<<<<<<< HEAD
-@media (max-width: 400px){
-.seatRow {
-    width: 90%;
-    margin: 0 0%;
-}
-}
-=======
->>>>>>> parent of 13c9f38... add all media queries
