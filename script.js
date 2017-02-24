@@ -2,14 +2,15 @@ $(document).ready(function() {
 
 
    $(".available").on("click", function(){
-        $("#form").show();
+        $("#form").slideDown();
 				$(this).toggleClass("reserved");
-            });
+    });
 
     
 
    var reservation = [];
    var currentSeat;
+   $(".available").click(seatClick());
 
     $(".btn").click(function(){
         var name = $("#name").text();
@@ -18,9 +19,12 @@ $(document).ready(function() {
 
     function seatClick(){
         var seatNumber;
-        $(".column").on("click", function(event){
+        $(".available").on("click", function(event){
+            if ($(this).hasClass("available") === true) {
             currentSeat = this;
             seatNumber = currentSeat.id;
+        }
+            
         });
 
     $("#form").on("submit", function(event){
@@ -30,14 +34,28 @@ $(document).ready(function() {
         {
             name: name,
             number: seatNumber}
-            );
+        );
+
+        $(".reserved").addClass("submitted").removeClass("available");
+        
+        function ran(){
+            $(".reserved").text("Reserved by ").append("<span><br>"+name+"</span>");
+            $(".reserved").addClass("submitted").removeClass("reserved:hover  available:hover column:hover reserved available");
+            $(".submitted").off("click");
+           
+        }
+
+        if ($(".column").hasClass("submitted") === true ) {
+            ran();
+         
+        };
+
+        // function off(){
+        //     $(".column").off("click");
+        // }
+        
+
     });
-    
-
-
-    }
-
-
-
+}
 
 });
