@@ -39,6 +39,7 @@ $(document).ready(function() {
             number: seatNumber}
             );	
         $("#form").val("").hide();
+        $('#form').find('input:text').val(''); 
 
         $(".reserved").addClass("submitted").removeClass("available");
         
