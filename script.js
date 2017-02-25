@@ -37,12 +37,13 @@ $(document).ready(function() {
         {
             name: name,
             number: seatNumber}
-            );
+            );	
+        $("#form").val("").hide();
 
         $(".reserved").addClass("submitted").removeClass("available");
         
         function ran(){
-            $(".reserved").text("Reserved by ").append("<span><br>"+name+"</span>");
+            $("#youReserved").text("Reserved by ").append("<span> "+name+"</span>");
             $(".reserved").addClass("submitted").removeClass("reserved:hover  available:hover column:hover reserved available");
             $(".submitted").off("click");
             
