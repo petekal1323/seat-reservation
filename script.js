@@ -1,31 +1,34 @@
 $(document).ready(function() {
 
 
-   $(".available").on("click", function(){
-        $("#form").slideDown();
-				$(this).toggleClass("reserved");
-    });
+ $(".available").on("click", function(){
+    $("#form").slideDown();
+    $('html, body').animate({
+        scrollTop: $("#form").offset().top
+    }, 2000);
+    $(this).toggleClass("reserved");
+});
 
-    
+ 
 
-   var reservation = [];
-   var currentSeat;
-   $(".available").click(seatClick());
+ var reservation = [];
+ var currentSeat;
+ $(".available").click(seatClick());
 
-    $(".btn").click(function(){
-        var name = $("#name").text();
-        $
-    });
+ $(".btn").click(function(){
+    var name = $("#name").text();
+    $
+});
 
-    function seatClick(){
-        var seatNumber;
-        $(".available").on("click", function(event){
-            if ($(this).hasClass("available") === true) {
+ function seatClick(){
+    var seatNumber;
+    $(".available").on("click", function(event){
+        if ($(this).hasClass("available") === true) {
             currentSeat = this;
             seatNumber = currentSeat.id;
         }
-            
-        });
+        
+    });
 
     $("#form").on("submit", function(event){
         event.preventDefault();
@@ -34,7 +37,7 @@ $(document).ready(function() {
         {
             name: name,
             number: seatNumber}
-        );
+            );
 
         $(".reserved").addClass("submitted").removeClass("available");
         
@@ -42,19 +45,13 @@ $(document).ready(function() {
             $(".reserved").text("Reserved by ").append("<span><br>"+name+"</span>");
             $(".reserved").addClass("submitted").removeClass("reserved:hover  available:hover column:hover reserved available");
             $(".submitted").off("click");
-           
+            
         }
 
         if ($(".column").hasClass("submitted") === true ) {
             ran();
-         
+            
         };
-
-        // function off(){
-        //     $(".column").off("click");
-        // }
-        
-
     });
 }
 
