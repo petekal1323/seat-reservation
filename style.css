@@ -18,17 +18,8 @@ body{
    height: 75px;
    width:100%;
 
-  
-}
+  }
 
-/*.header {
-	margin: 0px;
-	padding-top: 18.75px;
-	text-align: center;
-	color: #eee;
-	font-size: 32px;
-
-}*/
 
 .row {
     display: flex;
