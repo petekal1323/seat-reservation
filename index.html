@@ -17,6 +17,25 @@
 					<h2>Seat Reservation</h2>
 				</header>
 			</div>
+
+			<div class="directions">
+				<br>
+				<h3>Pick Your Seats</h3>
+
+				<p>The movie screen is represented at the the top of the seatmap and the first row underneath the screen is the front row. The gray squares are the available seats and the red squares are the seats that are unavailable or already reserved. To reserve your seat(s), please click on any of the gray squares and enter your information below.</p>
+
+				<div id="legend">
+					<ul class="pickSeat">
+						<li id="available">Available</li>
+						<li id="unavailable">Unavailable</li>
+						<li id="selected">Selected</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="flexbox">
 			<!--Adding a Comment -->
 			<div id="screenImg">
 				<img src="img/screen.png">
@@ -112,7 +131,8 @@
 			</div>
 		</div>
 		
-		<div id="form">
+
+		<div id="form" class="flexbox">
 			<form class="form-inline">
 				<div class="form-group">
 					<label for="exampleInputName2">Name:</label> <input class="form-control" id="name" placeholder="Your Name" type="text">
@@ -120,9 +140,10 @@
 			</form>
 		</div>
 		
-		<div id="youReserved">
-			
-		</div>
-	</div>
+		<div id="youReserved" class="flexbox">
+		</div> 
+		
+	</div> <!-- closes container div -->
+	
 </body>
 </html>
