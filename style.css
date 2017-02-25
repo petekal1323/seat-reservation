@@ -30,7 +30,6 @@ html, body {
     flex-direction: column;
     flex-wrap: wrap;
     height: 200px;
-    margin-left: 15px;
     text-align: center;
 }
 
@@ -83,6 +82,11 @@ html, body {
     opacity: .75;
     background-color: red;
 
+}
+#youReserved{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
